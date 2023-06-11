@@ -10,4 +10,10 @@ export class HijoComponent {
 
   @Input() empleadosEnlace:Empleado;
   @Input() indice:number;
+
+  arrayCaracteristicas = [''];
+
+  addCaracteristica(newCaracteristica: string) {
+    this.arrayCaracteristicas.push(newCaracteristica);
+  }
 }
