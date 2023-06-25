@@ -2,7 +2,7 @@
     <div class="row">
       <div class="col">
         <div >
-           {{indice+1}}: {{empleadosEnlace.nombre}} {{empleadosEnlace.apellido}} {{empleadosEnlace.cargo}} {{empleadosEnlace.salario}}
+          <a [routerLink]="['/actualiza',indice]"> {{indice+1}}: {{empleadosEnlace.nombre}} {{empleadosEnlace.apellido}} </a>  {{empleadosEnlace.cargo}} {{empleadosEnlace.salario}}
         </div>
         <ul style="list-style: none;">
           <li *ngFor="let caracteristica of arrayCaracteristicas">{{caracteristica}}</li>

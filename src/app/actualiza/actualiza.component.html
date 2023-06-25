@@ -1,0 +1,29 @@
+<form class="form-group row">
+    <div class="form-group col-md-3">
+      <label for="nombre">Nombre:</label>
+      <input type="text"  id="nombre" name="nombre" placeholder="Nombre" class="form-control" [(ngModel)]="cuadroNombre">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="apellido">Apellido:</label>
+      <input type="text"  id="apellido" name="apellido" placeholder="Apellido" class="form-control" [(ngModel)]="cuadroApellido">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="Cargo">Cargo:</label>
+      <input type="text"  id="cargo" name="cargo" placeholder="Cargo" class="form-control" [(ngModel)]="cuadroCargo">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="Salario">Salario:</label>
+      <input type="number"  id="salario" name="salario" placeholder="Salario" class="form-control" [(ngModel)]="cuadroSalario">
+    </div>
+    <div class="col">
+      <input type="submit" class="btn btn-success" value="Modificar" (click)="actualizaEmpleado()" style="margin-top: 5px;">
+    </div>
+
+  </form>
+
+  <br> <br>
+
+  <div style="text-align: left">
+      <button class="btn btn-primary" (click)="goHome()">Ir a Home</button>
+  </div>
+  

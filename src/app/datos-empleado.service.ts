@@ -20,4 +20,21 @@ export class DatosEmpleadoService {
   agregarDatos(empleado:Empleado){
     this.array.push(empleado);
   }
+
+  modificarDatos(id:number){
+    let datosEmpleado:Empleado = this.array[id];
+    return datosEmpleado;
+
+  }
+
+  actualizaEmpleado(indice:number, miEmpleado:Empleado){
+
+    let encuentraEmpleado = this.array[indice];
+
+    encuentraEmpleado.nombre = miEmpleado.nombre;
+    encuentraEmpleado.apellido = miEmpleado.apellido;
+    encuentraEmpleado.cargo = miEmpleado.cargo;
+    encuentraEmpleado.salario = miEmpleado.salario;
+
+  }
 }
